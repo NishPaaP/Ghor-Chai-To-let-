@@ -117,7 +117,7 @@ class _UserScreenState extends State<UserScreen> {
                   onPressed: () {
                     Navigator.of(context).push(
                       MaterialPageRoute(
-                        builder: (context) =>  Foget_PassWord_Screen(),
+                        builder: (context) =>  ForgetPasswordScreen(),
                       ),
                     );
                   },

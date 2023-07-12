@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:ghor_chai/screens/general/cat_screen.dart';
 import 'package:ghor_chai/screens/widgets/dimentions.dart';
 import 'package:ghor_chai/screens/widgets/test_widgets.dart';
 import 'package:provider/provider.dart';
@@ -21,8 +22,8 @@ class CategoriesWidget extends StatelessWidget {
     final Color color =  Colors.white ;
     return InkWell(
       onTap: () {
-        // Navigator.push(context, CategoryScreen.routeName,
-        //     arguments: catText);
+        Navigator.pushNamed(context, CategoryScreen.routeName,
+            arguments: catText);
       },
       child: Container(
         decoration: BoxDecoration(

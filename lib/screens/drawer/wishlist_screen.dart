@@ -22,7 +22,13 @@ class WishlistScreen extends StatelessWidget {
     final wishlistItemsList =
     wishlistProvider.getWishlistItems.values.toList().reversed.toList();
     return wishlistItemsList.isEmpty
-        ? Center(child: const Text("Empty",style: TextStyle(color: Colors.red,fontSize: 30),))
+        ? Scaffold(
+        appBar: AppBar(
+          title: Text("Wishlist"),
+          centerTitle: true,
+
+        ),
+        body: Center(child: const Text("Empty",style: TextStyle(color: Colors.red,fontSize: 30),)))
         : Scaffold(
       appBar: AppBar(
           centerTitle: true,

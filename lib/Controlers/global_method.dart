@@ -22,12 +22,12 @@ class GlobalMethods {
         builder: (context) {
           return AlertDialog(
             title: Row(children: [
-              Image.asset(
-                'assets/images/warning-sign.png',
-                height: 20,
-                width: 20,
-                fit: BoxFit.fill,
-              ),
+              // Image.asset(
+              //   'assets/images/warning-sign.png',
+              //   height: 20,
+              //   width: 20,
+              //   fit: BoxFit.fill,
+              // ),
               const SizedBox(
                 width: 8,
               ),

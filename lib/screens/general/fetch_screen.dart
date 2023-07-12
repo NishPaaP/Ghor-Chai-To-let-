@@ -60,20 +60,22 @@ class _FetchScreenState extends State<FetchScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: mainCenter,
-        children: [
-          Image.asset(
-            'images/luncher_icon.png',
-            fit: BoxFit.cover,
-            height: 100,
-          ),
-          addVerticalSpace(Dimensions.heightSize*5),
-          const
-          CircularProgressIndicator(
-            color: CustomColor.primaryColor,
-          )
-        ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              'images/luncher_icon.png',
+              fit: BoxFit.cover,
+              height: 100,
+            ),
+            addVerticalSpace(Dimensions.heightSize*5),
+            const
+            CircularProgressIndicator(
+              color: CustomColor.primaryColor,
+            )
+          ],
+        ),
       ),
     );
   }

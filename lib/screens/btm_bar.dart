@@ -112,11 +112,11 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
   @override
   Widget build(BuildContext context) {
     List<String> list = [
-      "Name: Mukbul Hossain\nPhone: 01856199643\nAddress: Ashulia Bazar, Ashulia",
-      "Name: Sajal\nPhone: 01763588204\nAddress: Mohakhali Fly Over, Mohakhali",
-      "Name: Fahim\nPhone: 01818214833\nAddress: 231 Green Road, Dhanmondi",
-      'Name: Sifat\nPhone: 01772842199\nAddress: Mirpur 2, Mirpur',
-      "Name: Yasir\nPhone: 01716756380\nAddress: Banani DOHS, Banani",
+      "Name: Kazi Masum\nPhone: 01800000000\nAddress: Ashulia Bazar, Ashulia",
+      "Name: Afjal\nPhone: 01744444444\nAddress: Mohakhali Fly Over, Mohakhali",
+      "Name: Himel\nPhone: 0181000003\nAddress: 231 Green Road, Dhanmondi",
+      'Name: Siam\nPhone: 01772842199\nAddress: Mirpur 2, Mirpur',
+      "Name: Yamin\nPhone: 01716756380\nAddress: Banani DOHS, Banani",
       "Name: Fahad\nPhone: 01751884655\nAddress: Gulshan 2, Gulshan",
       "Name: Hasan\nPhone: 01839327941\nAddress: Kallayanpur Bus Stop, Kallayanpur"
     ];
@@ -238,25 +238,25 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
                 text: 'Contact Us',
                 path: 'images/contact.png',
                 onTao: () {
-                  // Navigator.of(context).push(
-                  //   MaterialPageRoute(
-                  //     builder: (context) => const InfoScreen(
-                  //       title: 'Contact Us',
-                  //     ),
-                  //   ),
-                  // );
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => const InfoScreen(
+                        title: 'Contact Us',
+                      ),
+                    ),
+                  );
                 }),
             drawerButton(
               text: 'Membership',
               path: 'images/membership.png',
               onTao: () {
-                // Navigator.of(context).push(
-                //   MaterialPageRoute(
-                //     builder: (context) => const InfoScreen(
-                //       title: 'Membership',
-                //     ),
-                //   ),
-                // );
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => const InfoScreen(
+                      title: 'Membership',
+                    ),
+                  ),
+                );
               },
             ),
             const Divider(thickness: 1.5),

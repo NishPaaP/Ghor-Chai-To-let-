@@ -69,10 +69,7 @@ class _LoginScreenState extends State<LoginScreen> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Colors.lightBlueAccent,
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-      ),
+
       body: 
          Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -227,7 +224,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       alignment: Alignment.topRight,
                       child: TextButton(
                         onPressed: () {
-                          Navigator.of(context).push(MaterialPageRoute(builder: (_)=>Foget_PassWord_Screen()));
+                          Navigator.of(context).push(MaterialPageRoute(builder: (_)=>ForgetPasswordScreen()));
                         },
                         child: const Text(
                           'Forget password?',

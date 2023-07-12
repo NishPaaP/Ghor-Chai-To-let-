@@ -10,6 +10,7 @@ import 'package:ghor_chai/screens/auth/welcome_screen.dart';
 import 'package:ghor_chai/screens/drawer/order_screen.dart';
 import 'package:ghor_chai/screens/drawer/view_recently.dart';
 import 'package:ghor_chai/screens/drawer/wishlist_screen.dart';
+import 'package:ghor_chai/screens/general/cat_screen.dart';
 import 'package:ghor_chai/screens/general/product_details.dart';
 import 'package:ghor_chai/screens/home_screen.dart';
 import 'package:provider/provider.dart';
@@ -70,7 +71,7 @@ class MyApp extends StatelessWidget {
           // LoginScreen.routeName: (ctx) => const LoginScreen(),
           // WelcomeScreen.routeName: (ctx) => const WelcomeScreen(),
           // ForgetPasswordScreen.routeName: (ctx) => const ForgetPasswordScreen(),
-           //CategoryScreen.routeName: (ctx) => const CategoryScreen(),
+           CategoryScreen.routeName: (ctx) => const CategoryScreen(),
            EditProfileScreen.routeName: (ctx) => const EditProfileScreen(),
         },
       ),

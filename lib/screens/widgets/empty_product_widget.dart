@@ -15,9 +15,7 @@ class EmptyProdWidget extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.all(18.0),
-              child: Image.asset(
-                'assets/images/box.png',
-              ),
+              child: Icon(Icons.warning_amber_sharp,color: Colors.red,size: 200,)
             ),
             Text(
               text,
