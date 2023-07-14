@@ -169,7 +169,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                     Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const CheckOut_Screen()));
+                            builder: (context) => CheckOutScreen()));
                   },
                   child: Padding(
                     padding: const EdgeInsets.all(11.0),
